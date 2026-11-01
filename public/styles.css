@@ -70,8 +70,8 @@ a:hover { color: var(--accent); }
 h1 { margin-top: 1rem; font-size: clamp(3.25rem, 11vw, 7.5rem); font-weight: 400; line-height: 0.98; letter-spacing: -0.03em; }
 .lede { margin-top: 1.75rem; max-width: 34rem; font-size: clamp(1.25rem, 2.4vw, 1.5rem); line-height: 1.4; }
 .actions { margin-top: 2.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
-.button { display: inline-block; padding: 0.8rem 1.15rem; background: var(--accent); color: var(--accent-ink); font: 500 0.8125rem/1 var(--mono); text-decoration: none; }
-.button:hover { color: var(--accent-ink); filter: brightness(1.12); }
+.button { display: inline-block; padding: 0.8rem 1.15rem; background: #19282A; border: 1px solid var(--line); color: #f6f4ee; font: 500 0.8125rem/1 var(--mono); text-decoration: none; }
+.button:hover { color: #f6f4ee; background: #24393c; }
 .text-link { font-size: 1.0625rem; overflow-wrap: anywhere; }
 
 /* Sections */

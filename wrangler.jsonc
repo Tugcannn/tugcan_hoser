@@ -5,6 +5,10 @@
   "observability": {
     "enabled": true
   },
+  "routes": [
+    { "pattern": "tugcanhoser.com/*", "zone_name": "tugcanhoser.com" },
+    { "pattern": "www.tugcanhoser.com/*", "zone_name": "tugcanhoser.com" }
+  ],
   "assets": {
     "directory": "public"
   }
