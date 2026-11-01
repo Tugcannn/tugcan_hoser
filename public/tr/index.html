@@ -18,7 +18,7 @@
   <meta property="og:title" content="Tuğcan Hoşer — Makine Öğrenmesi / Yapay Zekâ Mühendisi">
   <meta property="og:description" content="Derin öğrenme, çok modlu modeller, model optimizasyonu ve canlı yapay zekâ sistemleri. Münih.">
   <link rel="preload" href="/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
   <a class="skip" href="#main">İçeriğe geç</a>
@@ -32,11 +32,14 @@
         <a href="#experience">Deneyim</a>
         <a href="#research">Araştırma</a>
         <a href="#contact">İletişim</a>
-        <div class="lang" role="group" aria-label="Dil">
-          <a href="/" lang="en">EN</a>
-          <a href="/de/" lang="de">DE</a>
-          <a href="/tr/" lang="tr" aria-current="true">TR</a>
-        </div>
+        <details class="lang">
+          <summary aria-label="Dil">TR</summary>
+          <div class="lang-menu">
+            <a href="/" lang="en">English</a>
+            <a href="/de/" lang="de">Deutsch</a>
+            <a href="/tr/" lang="tr" aria-current="true">Türkçe</a>
+          </div>
+        </details>
       </div>
     </nav>
     <div class="hero-body wrap">
@@ -180,5 +183,6 @@
   </footer>
 
   <script src="/field.js" defer></script>
+  <script src="/lang.js" defer></script>
 </body>
 </html>

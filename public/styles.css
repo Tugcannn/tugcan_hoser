@@ -55,10 +55,16 @@ a:hover { color: var(--accent); }
 .nav a { text-decoration: none; }
 .nav-links { display: flex; gap: 1.5rem; }
 .mark { letter-spacing: 0.08em; }
-.lang { display: flex; gap: 0.625rem; padding-left: 1.5rem; border-left: 1px solid var(--line); }
-.nav-links .lang a { color: var(--muted); }
-.nav-links .lang a:hover { color: var(--accent); }
-.nav-links .lang a[aria-current] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 0.3em; }
+.nav { z-index: 2; }
+.lang { position: relative; padding-left: 1.5rem; border-left: 1px solid var(--line); }
+.lang summary { display: flex; align-items: center; gap: 0.375rem; cursor: pointer; list-style: none; }
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary::after { content: ""; width: 0.35rem; height: 0.35rem; margin-top: -0.2rem; border: solid currentColor; border-width: 0 1px 1px 0; transform: rotate(45deg); transition: transform 0.15s; }
+.lang[open] summary::after { margin-top: 0.15rem; transform: rotate(-135deg); }
+.lang-menu { position: absolute; top: calc(100% + 0.75rem); right: 0; display: grid; min-width: 7.5rem; padding: 0.375rem; background: var(--bg); border: 1px solid var(--line); border-radius: 3px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.1); }
+.lang-menu a { padding: 0.5rem 0.625rem; color: var(--muted); }
+.lang-menu a:hover { color: var(--accent); }
+.nav-links .lang-menu a[aria-current] { color: var(--ink); }
 .hero-body { position: relative; margin-block: auto; padding-block: 3rem 5rem; }
 .eyebrow, .when, .tools dt { font: 400 0.8125rem/1.5 var(--mono); color: var(--muted); }
 h1 { margin-top: 1rem; font-size: clamp(3.25rem, 11vw, 7.5rem); font-weight: 400; line-height: 0.98; letter-spacing: -0.03em; }

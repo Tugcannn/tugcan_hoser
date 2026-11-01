@@ -18,7 +18,7 @@
   <meta property="og:title" content="Hakkımda — Tuğcan Hoşer">
   <meta property="og:description" content="Münih'te makine öğrenmesi mühendisi, Song Go'nun kurucu ortağı ve CTO'su.">
   <link rel="preload" href="/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
   <a class="skip" href="#main">İçeriğe geç</a>
@@ -30,11 +30,14 @@
       <a href="/tr/#experience">Deneyim</a>
       <a href="/tr/#research">Araştırma</a>
       <a href="/tr/#contact">İletişim</a>
-      <div class="lang" role="group" aria-label="Dil">
-        <a href="/about/" lang="en">EN</a>
-        <a href="/de/about/" lang="de">DE</a>
-        <a href="/tr/about/" lang="tr" aria-current="true">TR</a>
-      </div>
+      <details class="lang">
+        <summary aria-label="Dil">TR</summary>
+        <div class="lang-menu">
+          <a href="/about/" lang="en">English</a>
+          <a href="/de/about/" lang="de">Deutsch</a>
+          <a href="/tr/about/" lang="tr" aria-current="true">Türkçe</a>
+        </div>
+      </details>
     </div>
   </nav>
 
@@ -64,5 +67,6 @@
       <li><a href="/tugcan-hoser-resume.pdf">Özgeçmiş</a></li>
     </ul>
   </footer>
+  <script src="/lang.js" defer></script>
 </body>
 </html>

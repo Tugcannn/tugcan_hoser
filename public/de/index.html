@@ -18,7 +18,7 @@
   <meta property="og:title" content="Tuğcan Hoşer — Machine Learning Engineer / AI Engineer">
   <meta property="og:description" content="Deep Learning, multimodale Modelle, Modelloptimierung und KI-Systeme in Produktion. Aus München.">
   <link rel="preload" href="/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
   <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -32,11 +32,14 @@
         <a href="#experience">Erfahrung</a>
         <a href="#research">Forschung</a>
         <a href="#contact">Kontakt</a>
-        <div class="lang" role="group" aria-label="Sprache">
-          <a href="/" lang="en">EN</a>
-          <a href="/de/" lang="de" aria-current="true">DE</a>
-          <a href="/tr/" lang="tr">TR</a>
-        </div>
+        <details class="lang">
+          <summary aria-label="Sprache">DE</summary>
+          <div class="lang-menu">
+            <a href="/" lang="en">English</a>
+            <a href="/de/" lang="de" aria-current="true">Deutsch</a>
+            <a href="/tr/" lang="tr">Türkçe</a>
+          </div>
+        </details>
       </div>
     </nav>
     <div class="hero-body wrap">
@@ -180,5 +183,6 @@
   </footer>
 
   <script src="/field.js" defer></script>
+  <script src="/lang.js" defer></script>
 </body>
 </html>

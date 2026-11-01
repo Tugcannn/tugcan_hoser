@@ -18,7 +18,7 @@
   <meta property="og:title" content="Tuğcan Hoşer — Machine Learning Engineer / AI Engineer">
   <meta property="og:description" content="Deep learning, multi-modal models, model optimization and production AI systems. Based in Munich.">
   <link rel="preload" href="/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,11 +47,14 @@
         <a href="#experience">Experience</a>
         <a href="#research">Research</a>
         <a href="#contact">Contact</a>
-        <div class="lang" role="group" aria-label="Language">
-          <a href="/" lang="en" aria-current="true">EN</a>
-          <a href="/de/" lang="de">DE</a>
-          <a href="/tr/" lang="tr">TR</a>
-        </div>
+        <details class="lang">
+          <summary aria-label="Language">EN</summary>
+          <div class="lang-menu">
+            <a href="/" lang="en" aria-current="true">English</a>
+            <a href="/de/" lang="de">Deutsch</a>
+            <a href="/tr/" lang="tr">Türkçe</a>
+          </div>
+        </details>
       </div>
     </nav>
     <div class="hero-body wrap">
@@ -195,5 +198,6 @@
   </footer>
 
   <script src="/field.js" defer></script>
+  <script src="/lang.js" defer></script>
 </body>
 </html>

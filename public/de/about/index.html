@@ -18,7 +18,7 @@
   <meta property="og:title" content="Über mich — Tuğcan Hoşer">
   <meta property="og:description" content="Machine Learning Engineer in München sowie Co-Founder und CTO von Song Go.">
   <link rel="preload" href="/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
   <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -30,11 +30,14 @@
       <a href="/de/#experience">Erfahrung</a>
       <a href="/de/#research">Forschung</a>
       <a href="/de/#contact">Kontakt</a>
-      <div class="lang" role="group" aria-label="Sprache">
-        <a href="/about/" lang="en">EN</a>
-        <a href="/de/about/" lang="de" aria-current="true">DE</a>
-        <a href="/tr/about/" lang="tr">TR</a>
-      </div>
+      <details class="lang">
+        <summary aria-label="Sprache">DE</summary>
+        <div class="lang-menu">
+          <a href="/about/" lang="en">English</a>
+          <a href="/de/about/" lang="de" aria-current="true">Deutsch</a>
+          <a href="/tr/about/" lang="tr">Türkçe</a>
+        </div>
+      </details>
     </div>
   </nav>
 
@@ -64,5 +67,6 @@
       <li><a href="/tugcan-hoser-resume.pdf">Lebenslauf</a></li>
     </ul>
   </footer>
+  <script src="/lang.js" defer></script>
 </body>
 </html>
