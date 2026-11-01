@@ -3,3 +3,10 @@
 .DS_Store
 /image.png
 /image2.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
